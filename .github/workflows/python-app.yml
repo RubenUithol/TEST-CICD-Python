@@ -40,4 +40,4 @@ jobs:
       run: |
         pip install pytest-cov
         export PYTHONPATH=src
-        pytest --cov=tests tests/
+        pytest --cov=src tests/
