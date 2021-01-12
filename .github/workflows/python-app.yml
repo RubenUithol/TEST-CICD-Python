@@ -36,4 +36,4 @@ jobs:
         pip install pytest
         pip install pytest-cov
         export PYTHONPATH=src
-        pytest test_app.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+        pytest tests/test_app.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
