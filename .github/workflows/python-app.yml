@@ -34,6 +34,10 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
-        pip install pytest-cov
         export PYTHONPATH=src
+    - name: Run Test Coverage
+      run: |
+        pip install pytest-cov
+    - name: Export file
+      run: |
         pytest tests/test_app.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
